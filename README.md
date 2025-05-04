@@ -1,4 +1,4 @@
-Saathi AI – Mental Health Chatbot
+Saathi AI – A Mental Health Companion
 
 As part of my exploration into Generative AI and its applications for social impact, I built Saathi AI, a mental health chatbot designed to provide supportive, empathetic, and context-aware conversations using natural language processing and large language models. The goal of this project was to create an intelligent assistant that helps users cope with stress, anxiety, and emotional challenges through reflective dialogue.
 
