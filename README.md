@@ -1,4 +1,4 @@
-Saathi Ai - Mental Health Chatbot (Gen AI Powered)
+Saathi Ai - Mental Health Chatbot (Gen AI Powered) 
 
 A compassionate mental health support chatbot built using LangChain, Groq LLaMA-3.3, and ChromaDB, designed to provide thoughtful and empathetic responses to user queries.
 🚀 Features
