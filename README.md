@@ -1,83 +1,36 @@
-Saathi Ai - Mental Health Chatbot (Gen AI Powered) 
+Saathi AI – Mental Health Chatbot
 
-A compassionate mental health support chatbot built using LangChain, Groq LLaMA-3.3, and ChromaDB, designed to provide thoughtful and empathetic responses to user queries.
-🚀 Features
+As part of my exploration into Generative AI and its applications for social impact, I built Saathi AI, a mental health chatbot designed to provide supportive, empathetic, and context-aware conversations using natural language processing and large language models. The goal of this project was to create an intelligent assistant that helps users cope with stress, anxiety, and emotional challenges through reflective dialogue.
 
-    Uses LLaMA-3.3-70B via Groq for ultra-fast, high-quality generation
+This chatbot uses OpenAI’s GPT model to generate human-like responses, while NLTK's SentimentIntensityAnalyzer and RAKE algorithm are used to understand the emotional state of the user and extract meaningful keywords from their input. The system maintains conversation history through memory buffers to ensure consistency and contextual relevance throughout the interaction.
 
-    Semantic search over mental health documents using ChromaDB + HuggingFace Sentence Transformers
+Through this project, I strengthened my understanding of conversational AI, prompt engineering, and text analysis. It also helped me explore ethical AI development in sensitive domains like mental wellness.
+Tech Stack
 
-    Custom prompt engineering for empathetic and human-like responses
+    Python
 
-    PDF document ingestion and retrieval for contextual awareness
+    OpenAI API (GPT-3/4)
 
-🛠️ Tech Stack
+    NLTK (Natural Language Toolkit)
 
-    LangChain
+    RAKE (Rapid Automatic Keyword Extraction)
 
-    Groq API (LLaMA-3.3-70B)
+    LangChain (Memory management – optional)
 
-    HuggingFace (all-MiniLM-L6-v2)
+    Jupyter Notebook
 
-    ChromaDB
+Features
 
-    PyPDFLoader
+    Sentiment Analysis: Detects the emotional tone of user input to guide responses.
 
-    Google Colab / Jupyter
+    Empathetic Conversations: Generates thoughtful replies tailored to the user's mood.
 
-📁 Project Structure
+    Keyword Extraction: Identifies stress-related topics using keyword ranking algorithms.
 
-Mental_Health_Chatbot_GEN_AI.ipynb
-/data/                  # Folder containing mental health PDFs
-/chroma_db/             # Persisted vector database
+    Contextual Memory: Maintains previous conversation history to improve relevance.
 
-🧩 How It Works
+    Supportive Prompts: Suggests affirmations and mental health journaling exercises.
 
-    PDFs are loaded using DirectoryLoader and PyPDFLoader.
+Usage
 
-    Text is split into chunks using RecursiveCharacterTextSplitter.
-
-    Embeddings are generated using sentence-transformers/all-MiniLM-L6-v2.
-
-    A vector store is created with ChromaDB.
-
-    A RetrievalQA chain is set up with custom prompts to encourage compassionate responses.
-
-💻 Setup Instructions
-
-    Install dependencies
-
-pip install langchain_groq langchain_core langchain_community
-pip install pypdf chromadb sentence_transformers
-
-    Prepare your data
-
-Place relevant mental health PDFs in the data/ folder.
-
-    Set up environment variables
-
-Set your Groq API Key in the notebook/code:
-
-groq_api_key = "your_api_key_here"
-
-    Run the Notebook
-
-Launch the notebook and run all cells sequentially. The chatbot will initialize, process documents, and allow you to ask questions.
-🤖 Sample Prompt
-
-User: I'm feeling very anxious and overwhelmed.
-Chatbot: I’m sorry you’re feeling this way. You're not alone...
-
-📌 Notes
-
-    This tool is not a replacement for professional mental health care.
-
-    It can be used for awareness, education, or conversational simulations.
-
-📈 Future Improvements
-
-    Add UI using Streamlit or Gradio
-
-    Integrate real-time chat interface
-
-    Enhance context window and refine prompts
+Once the chatbot notebook is launched, the user can start interacting by entering any message related to how they’re feeling or what’s on their mind. The AI will analyze the sentiment and context of the input, then generate a supportive and empathetic response. Based on the mood and keywords, the chatbot may suggest affirmations, prompts for reflection, or further dialogue to support mental well-being.
